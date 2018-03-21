@@ -9,8 +9,8 @@
       "scalingPercentage": 20
     },
     "bufferingSpinnerDelay": 750,
-    "loadingImage": {"imageResource": {"url": "//player.ooyala.com/static/v4/candidate/latest/skin-plugin/assets/images/loader_svg.svg" } },
-    "accentColor":"#448aff"
+    "loadingImage": {"imageResource": {"url": "//player.ooyala.com/static/v4/stable/4.20.8/skin-plugin/assets/images/loader_svg.svg" } },
+    "accentColor":"#e85157"
   },
   "localization": {
     "defaultLanguage": "en",
@@ -70,16 +70,16 @@
     "showPlayButton": true,
     "playButtonPosition": "center",
     "playIconStyle": {
-      "color": "#F4333D",
+      "color": "white",
       "opacity": 1
     },
     "showTitle": true,
     "showDescription": true,
     "titleFont": {
-      "color": "#F4333D"
+      "color": "white"
     },
     "descriptionFont": {
-      "color": "#F4333D"
+      "color": "white"
     },
     "infoPanelPosition": "topLeft",
     "showPromo": true
@@ -88,7 +88,7 @@
     "showPauseIcon": true,
     "pauseIconPosition": "center",
     "PauseIconStyle": {
-      "color": "#F4333D",
+      "color": "white",
       "opacity": 1
     },
     "showTitle": true,
@@ -100,7 +100,7 @@
     "screenToShowOnEnd": "discovery",
     "showReplayButton": true,
     "replayIconStyle": {
-      "color": "#F4333D",
+      "color": "white",
       "opacity": 1
     },
     "showTitle": false,
@@ -116,14 +116,14 @@
     "panelTitle": {
       "titleFont": {
         "fontFamily": "Roboto Condensed",
-        "color": "#F4333D"
+        "color": "white"
       }
     },
     "contentTitle": {
       "show": true,
       "font": {
         "fontFamily": "Roboto Condensed",
-        "color": "#F4333D"
+        "color": "white"
       }
     },
     "showCountDownTimerOnEndScreen": true,
@@ -133,21 +133,21 @@
     "shareContent": ["social"],
     "socialContent": ["twitter", "facebook", "google+", "qq", "weibo", "wechat", "email"],
     "embed": {
-      "source": "<iframe width='640' height='480' frameborder='0' allowfullscreen src='//player.ooyala.com/static/v4/candidate/latest/skin-plugin/iframe.html?ec=<ASSET_ID>&pbid=<PLAYER_ID>&pcode=<PUBLISHER_ID>'></iframe>"
+      "source": "<iframe width='640' height='480' frameborder='0' allowfullscreen src='//player.ooyala.com/static/v4/stable/4.20.8/skin-plugin/iframe.html?ec=<ASSET_ID>&pbid=<PLAYER_ID>&pcode=<PUBLISHER_ID>'></iframe>"
     }
   },
   "moreOptionsScreen": {
     "brightOpacity": 1.0,
     "darkOpacity": 0.4,
     "iconSize": 30,
-    "color": "#F4333D",
+    "color": "white",
     "iconStyle": {
       "active": {
-        "color": "#F4333D",
+        "color": "#FFFFFF",
         "opacity": 1.0
       },
       "inactive": {
-        "color": "#F4333D",
+        "color": "#FFFFFF",
         "opacity": 0.95
       }
     }
@@ -171,15 +171,15 @@
   },
   "controlBar": {
     "volumeControl": {
-      "color": "#F4333D"
+      "color": ""
     },
     "iconStyle": {
       "active": {
-        "color": "#F4333D",
+        "color": "#FFFFFF",
         "opacity": 1.0
       },
       "inactive": {
-        "color": "#F4333D",
+        "color": "#FFFFFF",
         "opacity": 0.95
       }
     },
@@ -200,11 +200,11 @@
       "scrubberHandleBorderColor": "rgba(255,255,255,1)"
     },
     "scrubberBar": {
-      "backgroundColor": "rgb(244, 51, 61)",
-      "bufferedColor": "rgb(244, 51, 61)",
-      "playedColor": "rgb(244, 51, 61)",
-      "scrubberHandleColor": "rgb(244, 51, 61)",
-      "scrubberHandleBorderColor": "rgb(244, 51, 61)",
+      "backgroundColor": "rgba(175,175,175,0.5)",
+      "bufferedColor": "rgba(175,175,175,0.7)",
+      "playedColor": "",
+      "scrubberHandleColor": "rgba(67,137,255,1)",
+      "scrubberHandleBorderColor": "rgba(255,255,255,1)",
       "thumbnailPreview": true
     },
     "tooltips":{
@@ -253,7 +253,7 @@
     "mobileContent": [
       {"name":"volume", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":50 },
       {"name":"live", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":45},
-      {"name":"timeDuration", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":100 },
+      {"name":"timeDuration", "location":"controlBar", "whenDoesNotFit":"drop", "minWidth":100 },
       {"name":"flexibleSpace", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":1 },
       {"name":"share", "location":"moreOptions" },
       {"name":"discovery", "location":"moreOptions" },
