@@ -1,12 +1,12 @@
 {
   "general": {
     "watermark": {"imageResource": {"url": "","androidResource" : "logo","iosResource" : "logo"  },
-                  "position": "bottomRight",
-                  "clickUrl": "",
-                  "target": "_blank",
-                  "transparency": 1,
-                  "scalingOption": "default",
-                  "scalingPercentage": 20
+      "position": "bottomRight",
+      "clickUrl": "",
+      "target": "_blank",
+      "transparency": 1,
+      "scalingOption": "default",
+      "scalingPercentage": 20
     },
     "bufferingSpinnerDelay": 750,
     "loadingImage": {"imageResource": {"url": "//player.ooyala.com/static/v4/candidate/latest/skin-plugin/assets/images/loader_svg.svg" } },
@@ -70,16 +70,16 @@
     "showPlayButton": true,
     "playButtonPosition": "center",
     "playIconStyle": {
-      "color": "white",
+      "color": "#F4333D",
       "opacity": 1
     },
     "showTitle": true,
     "showDescription": true,
     "titleFont": {
-      "color": "white"
+      "color": "#F4333D"
     },
     "descriptionFont": {
-      "color": "white"
+      "color": "#F4333D"
     },
     "infoPanelPosition": "topLeft",
     "showPromo": true
@@ -88,7 +88,7 @@
     "showPauseIcon": true,
     "pauseIconPosition": "center",
     "PauseIconStyle": {
-      "color": "white",
+      "color": "#F4333D",
       "opacity": 1
     },
     "showTitle": true,
@@ -100,7 +100,7 @@
     "screenToShowOnEnd": "discovery",
     "showReplayButton": true,
     "replayIconStyle": {
-      "color": "white",
+      "color": "#F4333D",
       "opacity": 1
     },
     "showTitle": false,
@@ -116,22 +116,22 @@
     "panelTitle": {
       "titleFont": {
         "fontFamily": "Roboto Condensed",
-        "color": "white"
+        "color": "#F4333D"
       }
     },
     "contentTitle": {
       "show": true,
       "font": {
         "fontFamily": "Roboto Condensed",
-        "color": "white"
+        "color": "#F4333D"
       }
     },
     "showCountDownTimerOnEndScreen": true,
     "countDownTime": 10
   },
   "shareScreen": {
-    "shareContent": ["social", "embed"],
-    "socialContent": ["twitter", "facebook", "google+", "email"],
+    "shareContent": ["social"],
+    "socialContent": ["twitter", "facebook", "google+", "qq", "weibo", "wechat", "email"],
     "embed": {
       "source": "<iframe width='640' height='480' frameborder='0' allowfullscreen src='//player.ooyala.com/static/v4/candidate/latest/skin-plugin/iframe.html?ec=<ASSET_ID>&pbid=<PLAYER_ID>&pcode=<PUBLISHER_ID>'></iframe>"
     }
@@ -140,14 +140,14 @@
     "brightOpacity": 1.0,
     "darkOpacity": 0.4,
     "iconSize": 30,
-    "color": "white",
+    "color": "#F4333D",
     "iconStyle": {
       "active": {
-        "color": "#FFFFFF",
+        "color": "#F4333D",
         "opacity": 1.0
       },
       "inactive": {
-        "color": "#FFFFFF",
+        "color": "#F4333D",
         "opacity": 0.95
       }
     }
@@ -171,15 +171,15 @@
   },
   "controlBar": {
     "volumeControl": {
-      "color": ""
+      "color": "#F4333D"
     },
     "iconStyle": {
       "active": {
-        "color": "#FFFFFF",
+        "color": "#F4333D",
         "opacity": 1.0
       },
       "inactive": {
-        "color": "#FFFFFF",
+        "color": "#F4333D",
         "opacity": 0.95
       }
     },
@@ -200,11 +200,11 @@
       "scrubberHandleBorderColor": "rgba(255,255,255,1)"
     },
     "scrubberBar": {
-      "backgroundColor": "rgba(175,175,175,0.5)",
-      "bufferedColor": "rgba(175,175,175,0.7)",
-      "playedColor": "",
-      "scrubberHandleColor": "rgba(67,137,255,1)",
-      "scrubberHandleBorderColor": "rgba(255,255,255,1)",
+      "backgroundColor": "rgb(244, 51, 61)",
+      "bufferedColor": "rgb(244, 51, 61)",
+      "playedColor": "rgb(244, 51, 61)",
+      "scrubberHandleColor": "rgb(244, 51, 61)",
+      "scrubberHandleBorderColor": "rgb(244, 51, 61)",
       "thumbnailPreview": true
     },
     "tooltips":{
@@ -220,9 +220,6 @@
   "isVrAnimationEnabled": {
     "vrNotification": true,
     "vrIcon": false
-  },
-  "audio": {
-    "audioLanguage": "en"
   },
   "animationDurations": {
     "vrNotification": 5,
@@ -241,7 +238,6 @@
       {"name":"quality", "location":"controlBar", "whenDoesNotFit":"moveToMoreOptions", "minWidth":45 },
       {"name":"logo", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":125 },
       {"name":"stereoscopic", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":45 },
-      {"name":"audioAndCC", "location": "controlBar", "whenDoesNotFit":"keep", "minWidth":45 },
       {"name":"fullscreen", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":45 },
       {"name":"moreOptions", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":45 },
       {"name":"arrowsBlack", "location": "mainView", "whenDoesNotFit":"keep", "minWidth":45 }
@@ -263,7 +259,6 @@
       {"name":"discovery", "location":"moreOptions" },
       {"name":"closedCaption", "location":"moreOptions" },
       {"name":"stereoscopic", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":50 },
-      {"name":"audioAndCC", "location": "controlBar", "whenDoesNotFit":"keep", "minWidth":50 },
       {"name":"fullscreen", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":50 },
       {"name":"moreOptions", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":50 }
     ],
@@ -304,8 +299,6 @@
     "circleArrowsWhite": {"fontFamilyName": "ooyala-slick-type", "fontString": "\u005D", "fontStyleClass": "oo-icon"},
     "stereoOn": {"fontFamilyName": "ooyala-slick-type", "fontString": "\u0057", "fontStyleClass": "oo-icon oo-icon-system-auto"},
     "stereoOff": {"fontFamilyName": "ooyala-slick-type", "fontString": "\u0057", "fontStyleClass": "oo-icon oo-icon-system-auto"},
-    "vrIcon": {"fontFamilyName": "ooyala-slick-type", "fontString": "\u0059", "fontStyleClass": "oo-icon"},
-    "audioAndCC": {"fontFamilyName": "ooyala-slick-type", "fontString": "\u005F", "fontStyleClass": "oo-icon oo-icon-audio-and-cc"},
-    "selected": {"fontFamilyName": "ooyala-slick-type", "fontString": "\u0040", "fontStyleClass": "oo-icon oo-icon-selected"}
+    "vrIcon": {"fontFamilyName": "ooyala-slick-type", "fontString": "\u0059", "fontStyleClass": "oo-icon"}
   }
 }
